@@ -7,6 +7,26 @@ import { github } from '../assets';
 import { projects } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
 
+const ProjectCard = ({index, name, description, tags, image, source_code_link}) => {
+  return(
+    <motion.div 
+      variants={fadeIn("up", "spring", index * 0.5, 0.75)}
+      className='w-full'
+    >
+      <Tilt
+        options={{
+          max: 45,
+          scale: 1,
+          speed: 450
+        }}
+        className="bg-tertiary p-5 rounded-md sm:-[360px] w-[30%] h-[250px]"
+      >
+        kjkj
+      </Tilt>
+    </motion.div>
+  )
+}
+
 const Works = () => {
   return(
     <>
@@ -24,8 +44,18 @@ const Works = () => {
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque, quod aut illum qui, voluptas maxime nobis vero inventore, veniam eligendi nesciunt vel reiciendis adipisci libero? Ut voluptate debitis voluptatum quam.
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis iste, repellat aliquam voluptatibus quas voluptate atque sit maiores ipsum modi illum ea suscipit culpa inventore et. Enim optio odit natus.
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque impedit dignissimos nostrum deleniti delectus dolorum nisi molestiae sapiente architecto enim perspiciatis eum amet neque placeat debitis blanditiis minima, hic alias?
-          
+
         </motion.p>
+      </div>
+
+      <div className='mt-20 flex flex-wrap gap-7 w-full'>
+        {projects.map((project, index) => (
+          <ProjectCard 
+            key={`project-${index}`}
+            index={index}
+            {...project}
+          />
+        ))}
       </div>
     </>
   )
