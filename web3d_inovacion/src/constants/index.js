@@ -1,29 +1,40 @@
 import {
-    mobile,
-    backend,
-    creator,
-    web,
-    javascript,
-    typescript,
-    html,
-    css,
-    reactjs,
-    redux,
-    tailwind,
-    nodejs,
-    mongodb,
-    git,
-    figma,
-    docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
-    carrent,
-    jobit,
-    tripguide,
-    threejs,
-  } from "../assets";
+  mobile,
+  backend,
+  creator,
+  web,
+  javascript,
+  typescript,
+  html,
+  css,
+  reactjs,
+  redux,
+  tailwind,
+  nodejs,
+  mongodb,
+  git,
+  figma,
+  docker,
+  meta,
+  starbucks,
+  tesla,
+  shopify,
+  carrent,
+  jobit,
+  tripguide,
+  threejs,
+  canon,
+  hccomm,
+  gptlac,
+  pfizer,
+  loyalty,
+  hsc,
+  cheve,
+  campeones,
+  osde,
+  wab,
+  vendedor
+} from "../assets";
   
   export const navLinks = [
     {
@@ -35,16 +46,16 @@ import {
       title: "Work",
     },
     {
+      id: "tech",
+      title: "Tech",
+    },
+    {
+      id: "experience",
+      title: "Experience",
+    },
+    {
       id: "contact",
       title: "Contact",
-    },
-    {
-      id: "avatars",
-      title: "3D avatars",
-    },
-    {
-      id: "ecommerce",
-      title: "E-commerce",
     },
   ];
   
@@ -206,7 +217,7 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Yo Soy Canon",
       description:
         "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
       tags: [
@@ -223,11 +234,11 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
+      image: canon,
       source_code_link: "https://github.com/",
     },
     {
-      name: "Job IT",
+      name: "Health Care Communication",
       description:
         "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
       tags: [
@@ -244,11 +255,179 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
+      image: hccomm,
       source_code_link: "https://github.com/",
     },
     {
-      name: "Trip Guide",
+      name: "GPTLAG SHELL 2021",
+      description:
+        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      tags: [
+        {
+          name: "nextjs",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "supabase",
+          color: "green-text-gradient",
+        },
+        {
+          name: "css",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: gptlac,
+      source_code_link: "https://github.com/",
+    },
+    {
+      name: "Pfizer Conmigo",
+      description:
+        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      tags: [
+        {
+          name: "nextjs",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "supabase",
+          color: "green-text-gradient",
+        },
+        {
+          name: "css",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: pfizer,
+      source_code_link: "https://github.com/",
+    },
+    {
+      name: "App Loyalty meseros y centros de consumo",
+      description:
+        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      tags: [
+        {
+          name: "nextjs",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "supabase",
+          color: "green-text-gradient",
+        },
+        {
+          name: "css",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: loyalty,
+      source_code_link: "https://github.com/",
+    },
+    {
+      name: "Heineken Sociedad Cervecera",
+      description:
+        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      tags: [
+        {
+          name: "nextjs",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "supabase",
+          color: "green-text-gradient",
+        },
+        {
+          name: "css",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: hsc,
+      source_code_link: "https://github.com/",
+    },
+    {
+      name: "CheveJuntos Heineken",
+      description:
+        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      tags: [
+        {
+          name: "nextjs",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "supabase",
+          color: "green-text-gradient",
+        },
+        {
+          name: "css",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: cheve,
+      source_code_link: "https://github.com/",
+    },
+    {
+      name: "Liga de campeoNES",
+      description:
+        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      tags: [
+        {
+          name: "nextjs",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "supabase",
+          color: "green-text-gradient",
+        },
+        {
+          name: "css",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: campeones,
+      source_code_link: "https://github.com/",
+    },
+    {
+      name: "OSDE Argentina",
+      description:
+        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      tags: [
+        {
+          name: "nextjs",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "supabase",
+          color: "green-text-gradient",
+        },
+        {
+          name: "css",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: osde,
+      source_code_link: "https://github.com/",
+    },
+    {
+      name: "Whats App Business",
+      description:
+        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      tags: [
+        {
+          name: "nextjs",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "supabase",
+          color: "green-text-gradient",
+        },
+        {
+          name: "css",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: wab,
+      source_code_link: "https://github.com/",
+    },
+    {
+      name: "C3 Platform",
       description:
         "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
       tags: [
@@ -266,6 +445,27 @@ import {
         },
       ],
       image: tripguide,
+      source_code_link: "https://github.com/",
+    },
+    {
+      name: "Vendedor Tercero",
+      description:
+        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      tags: [
+        {
+          name: "nextjs",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "supabase",
+          color: "green-text-gradient",
+        },
+        {
+          name: "css",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: vendedor,
       source_code_link: "https://github.com/",
     },
   ];

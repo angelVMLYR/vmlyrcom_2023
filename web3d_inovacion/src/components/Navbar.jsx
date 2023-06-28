@@ -25,8 +25,8 @@ const Navbar = () => {
                 window.scrollTo(0,0);
               }}
             >
-              <img src={logo} alt="logo" className="w-9 h-9" />
-              <p className="text-white text-[18px] font-bold cursor-pointer flex">VMLYR &nbsp; <span className='sm:block hidden'>| &nbsp;COM</span></p>
+              <img src={logo} alt="logo" className="w-15 h-12" />
+              
             </Link>
             
             <ul className="list-none hidden sm:flex flex-row gap-10">

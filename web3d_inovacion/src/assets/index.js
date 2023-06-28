@@ -29,6 +29,17 @@ import tesla from "./company/tesla.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import canon from "./canon.png";
+import hccomm from "./hccomm.png";
+import gptlac from "./gptlac.png";
+import pfizer from "./pfizer.png";
+import loyalty from "./loyaltym.png";
+import hsc from "./hsc.png";
+import cheve from "./chevejuntos.png";
+import campeones from "./campeones.png";
+import osde from "./osdearg.png";
+import wab from "./wab.png";
+import vendedor from "./ven3ro.png";
 
 export {
   logo,
@@ -59,4 +70,15 @@ export {
   carrent,
   jobit,
   tripguide,
+  canon,
+  hccomm,
+  gptlac,
+  pfizer,
+  loyalty,
+  hsc,
+  cheve,
+  campeones,
+  osde,
+  wab,
+  vendedor
 };

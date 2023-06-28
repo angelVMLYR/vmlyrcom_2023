@@ -6,11 +6,8 @@ import Hero from './components/Hero';
 import Experience from './components/Experience';
 import Tech from './components/Tech';
 import Works from './components/Works';
-import Feedbacks from './components/Feedbacks';
 import Contact from './components/Contact';
 import StarsCanvas from './components/StarsCanvas';
-import Avatars from './components/Avatars';
-import Commerce from './components/Commerce';
 
 const App = () => {
   return(
@@ -22,12 +19,9 @@ const App = () => {
         </div>
         
         <About />
-        <Experience />
-        <Tech />
         <Works />
-        <Feedbacks />
-        <Avatars />
-        <Commerce />
+        <Tech />
+        <Experience />
 
         <div className='relative z-0'>
           <Contact />
