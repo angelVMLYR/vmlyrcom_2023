@@ -4,14 +4,19 @@ import { motion } from 'framer-motion';
 import { styles    } from '../styles';
 import { SectionWrapper } from '../hoc'
 import { github } from '../assets';
+import { player } from '../assets';
 import { projects } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
 
+import Modal from './Modal';
+import { useState } from 'react';
+
 const ProjectCard = ({index, name, description, tags, image, source_code_link}) => {
+  const [open, setOpen] = useState(false)
   return(
     <motion.div 
       variants={fadeIn("up", "spring", index * 0.5, 0.75)}
-      className='w-1/8 mt-10 mb-20'
+      className='mt-12 mb-20'
     >
       <Tilt
         options={{
@@ -19,7 +24,7 @@ const ProjectCard = ({index, name, description, tags, image, source_code_link}) 
           scale: 1,
           speed: 450
         }}
-        className="bg-tertiary p-5 rounded-lg lg:w-[700px] lg:h-[500px] sm:w-[300px] sm:h-[200px]"
+        className="bg-tertiary rounded-lg h-[350px] w-[330px]   sm:mt-[10px]"
       >
         <div className='relative w-full h-full'>
           <img 
@@ -29,8 +34,8 @@ const ProjectCard = ({index, name, description, tags, image, source_code_link}) 
           />
           <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
             <div
-              onClick={() => window.open(source_code_link, "_blank")}
-              className='bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+              onClick={() => setOpen(true)}
+              className='bg-gradient-to-r from-green-400 to-blue-500 mr-2 hover:from-pink-500 hover:to-yellow-500 w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
             >
               <img 
                 src={github} 
@@ -38,6 +43,47 @@ const ProjectCard = ({index, name, description, tags, image, source_code_link}) 
                 className='w-1/2 h-1/2 object-contain' 
               />
             </div>
+            <Modal className='flex' open={open} onClose={() => setOpen(false)}>
+              <section className='flex flex-col items-center'>
+                <div className="w-full h-[100px] mt-4 relative">
+
+                  <img className='rounded-lg' src={`./${image}`} alt="imageVideo" />
+
+                  <div className='w-[40px] h-[40px] rounded-full bg-gradient-to-r from-green-400 
+                    to-blue-500 absolute top-12 left-[120px] hover:from-pink-500 hover:to-yellow-500
+                  '>
+                    <img 
+                      src=''
+                      className='w-1/2 h-1/2 object-contain' 
+                    />
+                  </div>
+
+                </div>
+                
+                <p className={`${styles.sectionSubText} mt-[60px]`}>Tech's</p>
+                <div className='w-[80%] h-full flex justify-between relative mt-[10px]'>
+                  {/* columna index */}
+                  <div className='list-disc'>
+                    <ul>
+                      <li> - HTML</li>
+                      <li> - CSS</li>
+                      <li> - JavaScript</li>
+                      <li> - PHP</li>
+                    </ul>
+                  </div>
+
+                  {/* columna values */}
+                  <div className=''>
+                    <ul className='list-none'>
+                      <li> - AWS</li>
+                      <li> - Angular</li>
+                      <li> - Bootstrap</li>
+                    </ul>
+                  </div>
+                  
+                </div>
+              </section>
+            </Modal>
           </div>
         </div>
 
@@ -69,7 +115,7 @@ const Works = () => {
         </motion.p>
       </div>
 
-      <div className='mt-20 mb-4 flex flex-wrap gap-7'>
+      <div className='mt-20 mb-20 flex justify-center gap-10 h-[700px] w-full mb-20px overflow-x-scroll'>
         {projects.map((project, index) => (
           <ProjectCard 
             key={`project-${index}`}

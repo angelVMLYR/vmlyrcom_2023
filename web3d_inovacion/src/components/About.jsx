@@ -22,7 +22,7 @@ const ServiceCard = ({ index, title, icon }) => {
             scale: 1,
             speed: 450
           }}
-          className='bg-tertiary rounded-[20px] py-5 min-h-[280px]
+          className='bg-[#00205e] rounded-[20px] py-5 min-h-[280px]
           flex justify-evenly items-center flex-col'
         >
           <img src={icon} alt={title} 
@@ -55,7 +55,7 @@ const About = () => {
         exercitationem tempora porro.
       </motion.p>
 
-      <div className='mt-20 flex flex-wrap gap-10'>
+      <div className='mt-20 flex flex-wrap justify-center gap-10'>
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
