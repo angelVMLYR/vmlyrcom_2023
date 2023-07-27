@@ -53,10 +53,7 @@ import {
       id: "experience",
       title: "Experience",
     },
-    {
-      id: "contact",
-      title: "Contact",
-    },
+    
   ];
   
   const services = [
@@ -236,11 +233,31 @@ import {
       ],
       image: canon,
       source_code_link: "https://github.com/",
+      stack: [
+       {
+        name: "PHP",
+       }, 
+       {
+        name: "HTML5",
+       }, 
+       {
+        name: "CSS",
+       }, 
+       {
+        name: "BootStrap",
+       }, 
+       {
+        name: "ECMAScript 6+",
+       }, 
+       {
+        name: "AWS",
+       }
+      ]
     },
     {
       name: "Health Care Communication",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "We created a freee program that provides timely follow-ups and exclusive bonus to our patients. Through the use of their benefits card, they can receive a few months of free treatment. We comunicate through different channels.",
       tags: [
         {
           name: "react",
@@ -257,11 +274,31 @@ import {
       ],
       image: hccomm,
       source_code_link: "https://github.com/",
+      stack: [
+        {
+         name: "PHP",
+        }, 
+        {
+         name: "HTML5",
+        }, 
+        {
+         name: "CSS",
+        }, 
+        {
+         name: "BootStrap",
+        }, 
+        {
+         name: "ECMAScript 6+",
+        }, 
+        {
+         name: "AWS",
+        }
+      ]
     },
     {
       name: "GPTLAG SHELL 2021",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "A incentives program for Shell, which was created with the aim of promoting integration at all levels of the different organizations within our network and recognizing the great work of our entire team. From our entrepreneurs, regional managers, station managers, shift supervisors to our specialists.",
       tags: [
         {
           name: "nextjs",
@@ -278,11 +315,31 @@ import {
       ],
       image: gptlac,
       source_code_link: "https://github.com/",
+      stack: [
+        {
+         name: "PHP",
+        }, 
+        {
+         name: "HTML5",
+        }, 
+        {
+         name: "CSS",
+        }, 
+        {
+         name: "BootStrap",
+        }, 
+        {
+         name: "ECMAScript 6+",
+        }, 
+        {
+         name: "AWS",
+        }
+      ]
     },
     {
       name: "Pfizer Conmigo",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "Personalized offers, detailed analysis, and effective customer collaboration. Technological innovation driving strong and fruitful healthcare relationships.",
       tags: [
         {
           name: "nextjs",
@@ -299,11 +356,31 @@ import {
       ],
       image: pfizer,
       source_code_link: "https://github.com/",
+      stack: [
+        {
+         name: "PHP",
+        }, 
+        {
+         name: "HTML5",
+        }, 
+        {
+         name: "CSS",
+        }, 
+        {
+         name: "BootStrap",
+        }, 
+        {
+         name: "ECMAScript 6+",
+        }, 
+        {
+         name: "AWS",
+        }
+      ]
     },
     {
       name: "App Loyalty meseros y centros de consumo",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "Waiter platform enabling detailed analysis of establishment sales, suggesting data-driven strategies for enhancing business performance.",
       tags: [
         {
           name: "nextjs",
@@ -320,11 +397,32 @@ import {
       ],
       image: loyalty,
       source_code_link: "https://github.com/",
+      stack: [
+        {
+         name: "PHP",
+        }, 
+        {
+         name: "HTML5",
+        }, 
+        {
+         name: "CSS",
+        }, 
+        {
+         name: "BootStrap",
+        }, 
+        {
+         name: "ECMAScript 6+",
+        }, 
+        {
+         name: "AWS",
+        }
+      ]
+
     },
     {
       name: "Heineken Sociedad Cervecera",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "Increase the productivity of our customers through the Sociedad Cervecera loyalty program. With added value benefits for waiters",
       tags: [
         {
           name: "nextjs",
@@ -341,11 +439,31 @@ import {
       ],
       image: hsc,
       source_code_link: "https://github.com/",
+      stack: [
+        {
+         name: "PHP",
+        }, 
+        {
+         name: "HTML5",
+        }, 
+        {
+         name: "CSS",
+        }, 
+        {
+         name: "BootStrap",
+        }, 
+        {
+         name: "ECMAScript 6+",
+        }, 
+        {
+         name: "AWS",
+        }
+      ]
     },
     {
       name: "CheveJuntos Heineken",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "An ecommerce platform featuring sections for offers and data analysis, designed to benefit customers. The platform provides a user-friendly shopping experience, along with valuable insights to help customers make informed decisions and maximize their benefits from the available offers.",
       tags: [
         {
           name: "nextjs",
@@ -362,8 +480,28 @@ import {
       ],
       image: cheve,
       source_code_link: "https://github.com/",
+      stack: [
+        {
+         name: "PHP",
+        }, 
+        {
+         name: "HTML5",
+        }, 
+        {
+         name: "CSS",
+        }, 
+        {
+         name: "BootStrap",
+        }, 
+        {
+         name: "ECMAScript 6+",
+        }, 
+        {
+         name: "AWS",
+        }
+      ]
     },
-    {
+    /*{
       name: "Liga de campeoNES",
       description:
         "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
@@ -382,27 +520,6 @@ import {
         },
       ],
       image: campeones,
-      source_code_link: "https://github.com/",
-    },
-    {
-      name: "OSDE Argentina",
-      description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-      tags: [
-        {
-          name: "nextjs",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "supabase",
-          color: "green-text-gradient",
-        },
-        {
-          name: "css",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: osde,
       source_code_link: "https://github.com/",
     },
     {
@@ -425,11 +542,11 @@ import {
       ],
       image: wab,
       source_code_link: "https://github.com/",
-    },
+    },*/
     {
       name: "C3 Platform",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "Real-time services with integrated third parties. Helpdesk coordinates patient transfers, provides 24/7 virtual and phone assistance, appointment reminders (CRM-Farma), and medical support from nutritionists and psychologists.",
       tags: [
         {
           name: "nextjs",
@@ -446,11 +563,31 @@ import {
       ],
       image: tripguide,
       source_code_link: "https://github.com/",
+      stack: [
+        {
+         name: "PHP",
+        }, 
+        {
+         name: "HTML5",
+        }, 
+        {
+         name: "CSS",
+        }, 
+        {
+         name: "BootStrap",
+        }, 
+        {
+         name: "ECMAScript 6+",
+        }, 
+        {
+         name: "AWS",
+        }
+      ]
     },
     {
       name: "Vendedor Tercero",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "Generates product sales but does not belong to Nestlé's sales force. Recommends top-of-mind products to consumers. Promotes products based on convenience and knowledge when a customer searches for a product. Suggests and reminds customers of product promotions. Responsible for product replenishment, care, and material execution.",
       tags: [
         {
           name: "nextjs",
@@ -467,6 +604,26 @@ import {
       ],
       image: vendedor,
       source_code_link: "https://github.com/",
+      stack: [
+        {
+         name: "PHP",
+        }, 
+        {
+         name: "HTML5",
+        }, 
+        {
+         name: "CSS",
+        }, 
+        {
+         name: "BootStrap",
+        }, 
+        {
+         name: "ECMAScript 6+",
+        }, 
+        {
+         name: "AWS",
+        }
+      ]
     },
   ];
   

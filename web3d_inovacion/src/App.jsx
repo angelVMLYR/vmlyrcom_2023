@@ -6,7 +6,6 @@ import Hero from './components/Hero';
 import Experience from './components/Experience';
 import Tech from './components/Tech';
 import Works from './components/Works';
-import Contact from './components/Contact';
 import StarsCanvas from './components/StarsCanvas';
 
 const App = () => {
@@ -26,7 +25,6 @@ const App = () => {
         <Experience />
 
         <div className='relative z-0'>
-          <Contact />
           <StarsCanvas />
         </div>
       </div>

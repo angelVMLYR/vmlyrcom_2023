@@ -49,10 +49,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='my-4 text-secondary text-[17px] max-w-3x1 leading-[30px]'
       >
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-        Adipisci non, ipsum repellendus quibusdam incidunt soluta commodi blanditiis 
-        eaque corrupti libero labore consequatur, iusto dicta magnam facere ea 
-        exercitationem tempora porro.
+        VMLYRCommerce is a leading company specializing in providing services to major brands to enhance their online presence. With a focus on data analysis and business intelligence, VMLYRCommerce develops tailored strategies ranging from advertising campaigns to cutting-edge technological solutions. Through a comprehensive approach, the company strives to deliver robust and effective solutions that enable its clients to achieve their business objectives successfully and sustainably.
       </motion.p>
 
       <div className='mt-20 flex flex-wrap justify-center gap-10'>

@@ -41,6 +41,7 @@ import osde from "./osdearg.png";
 import wab from "./wab.png";
 import vendedor from "./ven3ro.png";
 import player from "./video-player.svg"
+import info from "./info.svg"
 
 export {
   logo,
@@ -81,6 +82,7 @@ export {
   campeones,
   osde,
   wab,
-  vendedor
-  player
+  vendedor,
+  player,
+  info
 };

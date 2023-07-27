@@ -3,7 +3,7 @@ export default function Modal ({open, onClose, children, image}) {
     <div 
       onClick={onClose} 
       className={`
-      absolute h-full w-full inset-0 flex justify-center items-center
+      absolute h-[400px] w-full inset-0 flex justify-center items-center
       transition-colors z-index
       ${open ? "visible bg-black/20" : "invisible"}
     `}>

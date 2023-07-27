@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 import { styles    } from '../styles';
 import { SectionWrapper } from '../hoc'
-import { github } from '../assets';
+import { info } from '../assets';
 import { player } from '../assets';
 import { projects } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
@@ -11,7 +11,7 @@ import { fadeIn, textVariant } from '../utils/motion';
 import Modal from './Modal';
 import { useState } from 'react';
 
-const ProjectCard = ({index, name, description, tags, image, source_code_link}) => {
+const ProjectCard = ({index, name, description, tags, image, source_code_link, stack}) => {
   const [open, setOpen] = useState(false)
   return(
     <motion.div 
@@ -24,7 +24,7 @@ const ProjectCard = ({index, name, description, tags, image, source_code_link}) 
           scale: 1,
           speed: 450
         }}
-        className="bg-tertiary rounded-lg h-[350px] w-[330px]   sm:mt-[10px]"
+        className="bg-tertiary rounded-lg h-[350px] w-[330px] sm:mt-[10px]"
       >
         <div className='relative w-full h-full'>
           <img 
@@ -38,51 +38,34 @@ const ProjectCard = ({index, name, description, tags, image, source_code_link}) 
               className='bg-gradient-to-r from-green-400 to-blue-500 mr-2 hover:from-pink-500 hover:to-yellow-500 w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
             >
               <img 
-                src={github} 
+                src={info} 
                 alt="github"
-                className='w-1/2 h-1/2 object-contain' 
+                className='w-[26px] h-[26px] object-contain' 
               />
             </div>
             <Modal className='flex' open={open} onClose={() => setOpen(false)}>
+
+
               <section className='flex flex-col items-center'>
-                <div className="w-full h-[100px] mt-4 relative">
-
-                  <img className='rounded-lg' src={`./${image}`} alt="imageVideo" />
-
-                  <div className='w-[40px] h-[40px] rounded-full bg-gradient-to-r from-green-400 
-                    to-blue-500 absolute top-12 left-[120px] hover:from-pink-500 hover:to-yellow-500
-                  '>
-                    <img 
-                      src=''
-                      className='w-1/2 h-1/2 object-contain' 
-                    />
-                  </div>
-
-                </div>
+                
                 
                 <p className={`${styles.sectionSubText} mt-[60px]`}>Tech's</p>
-                <div className='w-[80%] h-full flex justify-between relative mt-[10px]'>
+                <div className='w-[80%] h-full flex justify-center relative mt-[10px]'>
                   {/* columna index */}
                   <div className='list-disc'>
                     <ul>
-                      <li> - HTML</li>
-                      <li> - CSS</li>
-                      <li> - JavaScript</li>
-                      <li> - PHP</li>
+                      {stack.map( (tech, index) => (
+                        <li key={index}>
+                          - <strong>{tech.name}</strong>
+                        </li>
+                      ))}
                     </ul>
                   </div>
 
-                  {/* columna values */}
-                  <div className=''>
-                    <ul className='list-none'>
-                      <li> - AWS</li>
-                      <li> - Angular</li>
-                      <li> - Bootstrap</li>
-                    </ul>
-                  </div>
                   
                 </div>
               </section>
+              
             </Modal>
           </div>
         </div>
@@ -109,13 +92,12 @@ const Works = () => {
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
         >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis iste, repellat aliquam voluptatibus quas voluptate atque sit maiores ipsum modi illum ea suscipit culpa inventore et. Enim optio odit natus.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque impedit dignissimos nostrum deleniti delectus dolorum nisi molestiae sapiente architecto enim perspiciatis eum amet neque placeat debitis blanditiis minima, hic alias?
+          In this section, we are delighted to present a selection of standout projects undertaken by VMLYRCommerce for some of the most renowned brands in the market. As a leading company in the industry, we have worked diligently to develop innovative strategies and creative solutions that have propelled our clients to success. Through a combination of data analysis, creativity, and cutting-edge technology, we have created outstanding projects that have made a significant impact in the market.
 
         </motion.p>
       </div>
 
-      <div className='mt-20 mb-20 flex justify-center gap-10 h-[700px] w-full mb-20px overflow-x-scroll'>
+      <div className='mt-20 mb-20 flex justify-center gap-10 h-[700px] w-full mb-20px overflow-x-scroll '>
         {projects.map((project, index) => (
           <ProjectCard 
             key={`project-${index}`}
