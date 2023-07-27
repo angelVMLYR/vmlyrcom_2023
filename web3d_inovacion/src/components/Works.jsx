@@ -16,7 +16,7 @@ const ProjectCard = ({index, name, description, tags, image, source_code_link, s
   return(
     <motion.div 
       variants={fadeIn("up", "spring", index * 0.5, 0.75)}
-      className='mt-12 mb-20'
+      className='mt-12 mb-20 ml-4'
     >
       <Tilt
         options={{
@@ -97,14 +97,17 @@ const Works = () => {
         </motion.p>
       </div>
 
-      <div className='mt-20 mb-20 flex justify-center gap-10 h-[700px] w-full mb-20px overflow-x-scroll '>
-        {projects.map((project, index) => (
-          <ProjectCard 
-            key={`project-${index}`}
-            index={index}
-            {...project}
-          />
-        ))}
+      <div className='flex justify-center w-full'>
+
+        <div className='overflow-auto flex  h-[800px]'>
+          {projects.map((project, index) => (
+            <ProjectCard
+              key={`project-${index}`}
+              index={index}
+              {...project}
+            />
+          ))}
+        </div>
       </div>
     </>
   )

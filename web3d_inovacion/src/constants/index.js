@@ -49,10 +49,6 @@ import {
       id: "tech",
       title: "Tech",
     },
-    {
-      id: "experience",
-      title: "Experience",
-    },
     
   ];
   
@@ -501,7 +497,7 @@ import {
         }
       ]
     },
-    /*{
+    {
       name: "Liga de campeoNES",
       description:
         "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
@@ -521,6 +517,26 @@ import {
       ],
       image: campeones,
       source_code_link: "https://github.com/",
+      stack: [
+        {
+         name: "PHP",
+        }, 
+        {
+         name: "HTML5",
+        }, 
+        {
+         name: "CSS",
+        }, 
+        {
+         name: "BootStrap",
+        }, 
+        {
+         name: "ECMAScript 6+",
+        }, 
+        {
+         name: "AWS",
+        }
+      ]
     },
     {
       name: "Whats App Business",
@@ -542,7 +558,27 @@ import {
       ],
       image: wab,
       source_code_link: "https://github.com/",
-    },*/
+      stack: [
+        {
+         name: "PHP",
+        }, 
+        {
+         name: "HTML5",
+        }, 
+        {
+         name: "CSS",
+        }, 
+        {
+         name: "BootStrap",
+        }, 
+        {
+         name: "ECMAScript 6+",
+        }, 
+        {
+         name: "AWS",
+        }
+      ]
+    },
     {
       name: "C3 Platform",
       description:
